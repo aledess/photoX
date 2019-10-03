@@ -1,0 +1,61 @@
+header{
+    height: 100vh;
+    background: linear-gradient(rgba($header-bg, $header-bg-opacity-start), rgba($header-bg, $header-bg-opacity-end)),
+    url(../images/bg.jpeg) no-repeat center center /cover;
+}
+
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    &__heading{
+        animation: anim;
+        animation-duration: 2s;
+    }
+    &__p{
+        animation: anim;
+        animation-duration: 2s;
+        animation-delay: .5s;
+        animation-fill-mode: backwards;
+    }
+}
+
+.nav-menu{
+    background: linear-gradient(rgba($navbar-bg, $navbar-bg-opacity-start), rgba($navbar-bg, $navbar-bg-opacity-end));
+    padding: 30px;
+    transition: all .7s;
+    &--custom{
+        padding:5px 30px;
+        background: linear-gradient(rgba($navbar-bg, $navbarmin-bg-opacity-start), rgba($navbar-bg, $navbarmin-bg-opacity-end));
+    }
+    &__item{
+        font-size: 13x;
+        letter-spacing: 1px;
+        color: #eee;
+        transition: color .5s;
+        &:hover, &--active{
+            color: $navbar-link;
+        }
+    }
+}
+
+.nav-button{
+    &__line{
+        width: 23px;
+        height:3px;
+        margin:5px;
+        transition: all .4s;
+        .change &--1{
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .change &--2{
+            opacity:0;
+        }
+        .change &--3{
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    }
+   
+}

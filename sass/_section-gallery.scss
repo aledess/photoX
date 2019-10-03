@@ -1,0 +1,10 @@
+.gallery {
+    &__list-item {
+        color: #777;
+        cursor: pointer;
+        user-select: none;
+        &--active{
+            color: $activetab-color;
+        }
+    }
+}

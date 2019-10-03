@@ -1,0 +1,51 @@
+.contact {
+    background: linear-gradient(105deg, rgba(21, 31, 32, 1) 0%, rgba(21, 31, 32, .95) 50%, transparent 50%), url(images/form-img.jpeg) no-repeat center /cover;
+    &__form {
+        &__input {
+            background: transparent;
+            border-color: transparent;
+            border-bottom: 2px solid #ccc;
+            border-radius: 0;
+            transition: all .8s;
+            &:focus {
+                background: transparent;
+                border-color: transparent;
+                box-shadow: none;
+                color:#fff;
+                border-bottom: 2px solid #f5593d;
+            }
+            &:placeholder-shown + label{
+                transform: translate(20px, 20px);
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &__button{
+            background: #f9793d;
+            color:#eee;
+            transition: all 3s;
+            &:hover{
+                background: #f9793d;
+                transform: translateY(-3px);
+            } 
+        }
+        &__label{
+            color: #777;
+            display: block;
+            margin-top:-70px;
+            margin-left: 4px;
+            font-size: 13px;
+            transition: all .3s;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .contact{
+    background: linear-gradient( rgba(21, 31, 32, 1) 0%, rgba(21, 31, 32, .95));
+        &__form{
+            width: 80%;
+            margin: auto;
+        }
+    }
+}

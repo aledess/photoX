@@ -1,0 +1,11 @@
+.footer{
+    &__link{
+        font-size: 13px;
+        color: #eee;
+        transition: all .3s;
+        &:hover{
+            color:#70aed2;
+            text-decoration: none;
+        }
+    }
+}
